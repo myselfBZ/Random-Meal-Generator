@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{%block title%}<title>Home</title>{%endblock%}
+{%block style%}<style>
+    button{
+        margin-right: 20px;
+    }
+</style>{%endblock%}
+{%block content%}
+<a href="{%url 'random-meal'%}"><button>Get a meal</button></a>
+<a href="{%url 'your-meals'%}"><button>Add meals</button></a>
+<h1>Home</h1>
+<h2>You are logged in as: @{{user}} </h2>
+
+{%endblock%}

@@ -1,0 +1,28 @@
+<title>Get your meal</title>
+<style>
+    body{
+        display: grid;
+        place-items: center;
+        
+    }
+    img{
+        width: 500px;
+    }
+    button{
+        margin-top: 30px;
+    }
+</style>
+
+
+
+
+
+<h1>
+    {{meal.name}}
+</h1>
+
+
+<img src="media/{{meal.image}}" alt="">
+
+<a href="{%url 'random-meal'%}"><button>Get another</button></a>
+<a href="{%url 'home'%}"><button>Home</button></a>

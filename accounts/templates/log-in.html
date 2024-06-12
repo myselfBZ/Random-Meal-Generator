@@ -1,0 +1,7 @@
+<form action="" method="post">
+    {%csrf_token%}
+    {{form}}
+    <input type="submit">
+</form>
+<h2>Don't have account sign up here</h2>
+<a href="{%url 'sign-up'%}">sign Up</a>
